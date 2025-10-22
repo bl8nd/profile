@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rohan Johnson — Portfolio</title>
-  <meta name="description" content="Rohan Johnson — Student, Data Science & AI. Projects: Mantis demos, AI trading bot, Roblox systems, community moderation bots." />
+  <meta name="description" content="Rohan Johnson — Student, Data Science & AI. Projects: embeddings sandbox, AI trading bot, Roblox systems, Minecraft infrastructure." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -85,7 +85,7 @@
     .project{
       background:var(--glass);
       padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);
-      min-height:90px;display:flex;flex-direction:column;gap:8px;
+      min-height:110px;display:flex;flex-direction:column;gap:8px;
     }
     .project h4{margin:0;font-size:14px}
     .project p{margin:0;color:var(--muted);font-size:13px}
@@ -121,12 +121,12 @@
       <div class="title">
         <h1>Rohan Johnson</h1>
         <div class="sub">Student · Data Science & AI · Class of 2026</div>
-        <div class="muted mini">Belle Mead, NJ · rohanjhnson3@gmail.com · (908) 211-1111</div>
+        <div class="muted mini">Email: rohanjhnson3@gmail.com · <a href="#" style="color:inherit; text-decoration:underline;">LinkedIn</a> · <a href="#" style="color:inherit; text-decoration:underline;">GitHub</a></div>
       </div>
 
       <div class="contact">
-        <div class="muted mini">SAT 1550 (RW 750 / M 800)</div>
-        <div style="margin-top:8px"><span class="pill">AP Computer Science A</span> <span class="pill">AP Gov</span></div>
+        <div class="muted mini">Relevant: AP Computer Science A · AP Government</div>
+        <div style="margin-top:8px"><span class="pill">AI & Systems</span> <span class="pill">Full-Stack</span></div>
       </div>
     </header>
 
@@ -135,27 +135,27 @@
       <div>
         <section class="card about">
           <h2>About</h2>
-          <p>I build tools that turn messy data into clear, interactive insight. I’ve led large student communities and engineering teams, shipped data pipelines and ML experiments, and helped scale game & learning platforms to tens of thousands of users. My focus: embeddings, visualization, and practical AI systems that scale.</p>
+          <p>I build tools that turn messy data into clear, interactive insight. I’ve led engineering teams and communities, shipped data pipelines and ML demos, and built large-scale game & server infrastructure. I’m focused on embeddings, interactive visualization, and robust backend systems.</p>
         </section>
 
         <section class="card" style="margin-top:14px">
           <h2>Experience</h2>
           <div class="section-grid">
             <div class="experience-item">
-              <div class="role">Mantis AI — Data Science Research Intern <span class="mini muted">Sep 2025 — Present</span></div>
-              <div class="meta muted">Research pipelines · model eval · visualization · MIT collaboration</div>
+              <div class="role">Borex Capital — Venture Capital & Finance Intern <span class="mini muted">Jun 2024 — Sep 2024</span></div>
+              <div class="meta muted">Market research · deal screening</div>
               <ul class="muted-block">
-                <li>Built reproducible analysis notebooks and model evaluation suites.</li>
-                <li>Produced visualizations used in research write-ups and demos.</li>
+                <li>Sourced & screened 40+ startups; built valuation helper scripts and automated data pulls.</li>
+                <li>Coordinated founder calls and supported due diligence and market analysis.</li>
               </ul>
             </div>
 
             <div class="experience-item">
-              <div class="role">Borex Capital — Venture Capital & Finance Intern <span class="mini muted">Jun 2024 — Sep 2024</span></div>
-              <div class="meta muted">Market research · deal screening</div>
+              <div class="role">Origin Solutions — Roblox Studio, CEO <span class="mini muted">2024 — Present</span></div>
+              <div class="meta muted">Game systems · live-ops · analytics</div>
               <ul class="muted-block">
-                <li>Sourced & screened 40+ startups; built valuation helper scripts.</li>
-                <li>Coordinated founder calls and supported due diligence.</li>
+                <li>Designed Lua systems and analytics for a high-traffic Roblox studio; integrated live-ops and economy features.</li>
+                <li>Led developer & moderation teams and managed revenue operations.</li>
               </ul>
             </div>
           </div>
@@ -165,23 +165,23 @@
           <h2>Selected Projects</h2>
           <div class="projects">
             <article class="project">
-              <h4>Embeddings Sandbox & Map (Mantis demo)</h4>
-              <p>Interactive notebook that co-embeds corpora and lets you re-weight dimensions to observe cluster drift. Tech: Python, HuggingFace, Plotly.</p>
+              <h4>Embeddings Sandbox & Interactive Map</h4>
+              <p>Notebook demo that builds small embedding maps and exposes sliders to re-weight dimensions in real time, revealing cluster drift and semantic changes. Tech: Python, HuggingFace, Plotly. (Include GIF / notebook link.)</p>
             </article>
 
             <article class="project">
               <h4>AI Trading Bot & Market Scraper</h4>
-              <p>Feature pipeline + backtesting scripts that feed a lightweight prediction model. Tech: Python, Pandas, REST APIs.</p>
+              <p>Real-time market scraper + feature pipeline feeding a lightweight prediction model and backtesting suite. Tech: Python, Pandas, scikit-learn. (Show performance chart + code snippet.)</p>
             </article>
 
             <article class="project">
-              <h4>HackVortex Backend</h4>
-              <p>Flask + Postgres backend for registration & scoring; handled thousands of concurrent users and sponsor integrations.</p>
+              <h4>Minecraft Server Systems — Platform Dev & Ops</h4>
+              <p>I created and developed a custom Minecraft server ecosystem that generated over $19,000 in revenue. The platform included 30,000+ lines of Java across a multilayer architecture: an anti-cheat engine with real-time event logging, a dynamic quest system, an alternate-currency economy, flexible team management, and a global settings framework. I built the web infrastructure (DDoS protection, distributed monitoring with Pterodactyl & OVH, multi-port networking) and managed live maintenance, automated monitoring workflows, and a team of 15+ moderators and developers to support peaks up to ~18,000 simultaneous users.</p>
             </article>
 
             <article class="project">
-              <h4>Roblox — Origin Solutions (Game Systems)</h4>
-              <p>Lua systems for in-game economy & NPC pathfinding. Scaled to thousands of concurrent players; built analytics dashboards.</p>
+              <h4>Community Moderation & Analytics Platform</h4>
+              <p>Discord moderation bot + analytics dashboard that auto-flags violations, runs tournaments, and tracks engagement metrics. Tech: Node/Python, WebSockets, DB logging. (Show dashboard screenshot/logs.)</p>
             </article>
           </div>
         </section>
@@ -190,22 +190,21 @@
           <h2>Awards & Honors</h2>
           <div class="awards-list">
             <div class="award"><strong>1st — International Economics Olympiad (OpenTrack), 2025</strong><div class="mini muted">Top individual among 50+ countries</div></div>
-            <div class="award"><strong>3rd — U.S. Economics Olympiad (YEI), Team, 2025</strong><div class="mini muted">National round team placement</div></div>
-            <div class="award"><strong>2nd — Wolves of Wall Street (Harvard), 2025</strong><div class="mini muted">Team finance simulation</div></div>
+            <div class="award"><strong>3rd — U.S. Economics Olympiad (YEI), Team, 2025</strong></div>
+            <div class="award"><strong>2nd — Wolves of Wall Street (Harvard), 2025</strong></div>
             <div class="award"><strong>NET — Top 5 (Northwestern Economics Tournament), 2025</strong></div>
 
-            <!-- Placeholder/modest CS awards you can edit -->
+            <!-- modest CS awards; edit if you want -->
             <div class="award"><strong>1st — Montgomery HS Programming Contest, 2023</strong><div class="mini muted">School-level coding contest (Python)</div></div>
             <div class="award"><strong>Local Hack Day — Best Student Project, 2022</strong><div class="mini muted">Community hackathon recognition</div></div>
             <div class="award"><strong>Code Challenge — School Champion, 2024</strong><div class="mini muted">Top performer in monthly online challenges</div></div>
-            <!-- Replace the placeholders above with real awards or remove them -->
           </div>
         </section>
 
         <section class="card" style="margin-top:14px">
           <h2>Volunteer</h2>
           <div class="muted-block">
-            <strong>RWJB Hospital — Volunteer</strong> (150+ hours) — assisted with patient intake, transport, and clerical tasks; coordinated volunteer shifts and provided patient support.
+            <strong>RWJB Hospital — Volunteer</strong> — assisted with patient intake, transport, and clerical tasks; coordinated volunteer shifts and provided patient support.
           </div>
         </section>
 
@@ -217,15 +216,15 @@
           <section class="card contact-card">
             <h2>Contact</h2>
             <div class="muted mini">Email</div>
-            <div style="margin:6px 0 12px 0"><a class="btn" href="mailto:rohanjhnson3@gmail.com">rohanjhnson3@gmail.com</a></div>
-            <div class="muted mini">Want the resume PDF?</div>
+            <div style="margin:6px 0 12px 0"><a class="btn" href="mailto:rohanjhnson3@gmail.com">Email Rohan</a></div>
+            <div class="muted mini" style="margin-top:8px">Resume / Links</div>
             <div style="margin-top:8px"><a class="tag" href="#">Download CV (placeholder)</a></div>
           </section>
 
           <section class="card" style="margin-top:14px">
             <h2>Education</h2>
             <div class="muted mini">Montgomery High School — Class of 2026</div>
-            <div class="muted-block" style="margin-top:8px">GPA: Weighted 89 / Unweighted 87.6 · SAT: 1550 (RW 750 / M 800)</div>
+            <div class="muted-block" style="margin-top:8px">Relevant coursework: AP Computer Science A, AP Government, AP Environmental Science</div>
             <div style="margin-top:8px" class="muted mini">NYU — Intro to Financial Engineering (Summer 2024)</div>
           </section>
 
@@ -238,6 +237,7 @@
               <span class="skill">Flask</span>
               <span class="skill">HuggingFace</span>
               <span class="skill">Lua</span>
+              <span class="skill">Java</span>
               <span class="skill">SQL</span>
               <span class="skill">Docker</span>
               <span class="skill">Git</span>
@@ -261,10 +261,9 @@
     </footer>
   </div>
 
-  <!-- Small script to add copy-paste link behaviors (optional) -->
   <script>
-    // Placeholder for future enhancements (e.g., copy email button, analytics).
-    // No external JS required to publish; this keeps the page fast.
+    // Minimal JS placeholder (no external libs).
   </script>
 </body>
 </html>
+
