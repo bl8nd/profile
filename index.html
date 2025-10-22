@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rohan Johnson — Portfolio</title>
-  <meta name="description" content="Rohan Johnson — Student, Data Science & AI. Projects: embeddings sandbox, AI trading bot, Roblox systems, Minecraft infrastructure." />
+  <meta name="description" content="Rohan Johnson — Student, Data Science & AI. Projects: embeddings sandbox, AI trading bot, Roblox systems, Minecraft infrastructure, HackVortex." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -121,7 +121,7 @@
       <div class="title">
         <h1>Rohan Johnson</h1>
         <div class="sub">Student · Data Science & AI · Class of 2026</div>
-        <div class="muted mini">Email: rohanjhnson3@gmail.com · <a href="#" style="color:inherit; text-decoration:underline;">LinkedIn</a> · <a href="#" style="color:inherit; text-decoration:underline;">GitHub</a></div>
+        <div class="muted mini">Email: <a href="mailto:rohanjhnson3@gmail.com" style="color:inherit;text-decoration:underline">rohanjhnson3@gmail.com</a> · <a href="#" style="color:inherit; text-decoration:underline;">LinkedIn</a> · <a href="#" style="color:inherit; text-decoration:underline;">GitHub</a></div>
       </div>
 
       <div class="contact">
@@ -135,18 +135,19 @@
       <div>
         <section class="card about">
           <h2>About</h2>
-          <p>I build tools that turn messy data into clear, interactive insight. I’ve led engineering teams and communities, shipped data pipelines and ML demos, and built large-scale game & server infrastructure. I’m focused on embeddings, interactive visualization, and robust backend systems.</p>
+          <p>I build tools that turn messy data into clear, interactive insight. I’ve led engineering teams and communities, shipped data pipelines and ML demos, and built large-scale game & server infrastructure. My focus: embeddings, interactive visualization, resilient backend systems, and productizing research prototypes.</p>
         </section>
 
         <section class="card" style="margin-top:14px">
           <h2>Experience</h2>
           <div class="section-grid">
+
             <div class="experience-item">
               <div class="role">Borex Capital — Venture Capital & Finance Intern <span class="mini muted">Jun 2024 — Sep 2024</span></div>
               <div class="meta muted">Market research · deal screening</div>
               <ul class="muted-block">
-                <li>Sourced & screened 40+ startups; built valuation helper scripts and automated data pulls.</li>
-                <li>Coordinated founder calls and supported due diligence and market analysis.</li>
+                <li>Sourced & screened 40+ startups; built automated valuation helpers and market-scraping pipelines.</li>
+                <li>Prepared investor memos and coordinated founder calls for early-stage diligence.</li>
               </ul>
             </div>
 
@@ -154,57 +155,84 @@
               <div class="role">Origin Solutions — Roblox Studio, CEO <span class="mini muted">2024 — Present</span></div>
               <div class="meta muted">Game systems · live-ops · analytics</div>
               <ul class="muted-block">
-                <li>Designed Lua systems and analytics for a high-traffic Roblox studio; integrated live-ops and economy features.</li>
-                <li>Led developer & moderation teams and managed revenue operations.</li>
+                <li>Designed economy & live-ops subsystems, authored Lua modules for persistence and player state management.</li>
+                <li>Led product roadmap and developer team; maintained analytics pipelines for retention experiments.</li>
               </ul>
             </div>
+
+            <div class="experience-item">
+              <div class="role">Morris Advisory Group — Chief Financial Officer <span class="mini muted">2022 — Present</span></div>
+              <div class="meta muted">Finance · product analytics · advisory</div>
+              <ul class="muted-block">
+                <li>Advised 100+ NJ small businesses on strategy and digital transformation; designed revenue dashboards and tracking funnels.</li>
+                <li>Built campaign analytics and dashboards that collectively reached 100K+ views; coordinated implementation with local teams.</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="role">Peer Bridge — AI Research Lead, Mental-Health Campaign Bot <span class="mini muted">2023 — 2024</span></div>
+              <div class="meta muted">NLP prototype · ethics · deployment</div>
+              <ul class="muted-block">
+                <li>Led a small team to prototype a conversational agent for mental health outreach; developed intent classifiers and safe-response filters.</li>
+                <li>Built analytics to measure engagement and escalation signals; coordinated with counselors for design and triage pathways.</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="role">Freelance Data Engineer — Contract Projects <span class="mini muted">2021 — Present</span></div>
+              <div class="meta muted">ETL · dashboards · automation</div>
+              <ul class="muted-block">
+                <li>Delivered ETL pipelines and dashboards for local nonprofits and student groups using Python, SQL, and lightweight cloud services.</li>
+                <li>Created automated monitoring alerts and simple web UIs for non-technical stakeholders.</li>
+              </ul>
+            </div>
+
           </div>
         </section>
 
         <section class="card" style="margin-top:14px">
           <h2>Selected Projects</h2>
           <div class="projects">
+
             <article class="project">
               <h4>Embeddings Sandbox & Interactive Map</h4>
-              <p>Notebook demo that builds small embedding maps and exposes sliders to re-weight dimensions in real time, revealing cluster drift and semantic changes. Tech: Python, HuggingFace, Plotly. (Include GIF / notebook link.)</p>
+              <p>Notebook demo that co-embeds small corpora and exposes sliders to re-weight dimensions and observe cluster drift. Built an interactive Plotly view and a small Flask wrapper for sharing. Tech: Python, HuggingFace, Plotly, Flask. (Show GIF or notebook link.)</p>
             </article>
 
             <article class="project">
               <h4>AI Trading Bot & Market Scraper</h4>
-              <p>Real-time market scraper + feature pipeline feeding a lightweight prediction model and backtesting suite. Tech: Python, Pandas, scikit-learn. (Show performance chart + code snippet.)</p>
+              <p>Realtime market-scraper → feature pipeline → model prediction → backtest loop. Includes modular featurizers and a reproducible notebook showing a strategy baseline. Tech: Python, Pandas, REST APIs, scikit-learn. (Show P&L chart and code snippet.)</p>
             </article>
 
             <article class="project">
               <h4>Minecraft Server Systems — Platform Dev & Ops</h4>
-              <p>I created and developed a custom Minecraft server ecosystem that generated over $19,000 in revenue. The platform included 30,000+ lines of Java across a multilayer architecture: an anti-cheat engine with real-time event logging, a dynamic quest system, an alternate-currency economy, flexible team management, and a global settings framework. I built the web infrastructure (DDoS protection, distributed monitoring with Pterodactyl & OVH, multi-port networking) and managed live maintenance, automated monitoring workflows, and a team of 15+ moderators and developers to support peaks up to ~18,000 simultaneous users.</p>
+              <p>Built a custom Minecraft server ecosystem (30k+ lines Java) with: anti-cheat + real-time event logging; dynamic quest generator; alternate currency economy; multi-tenant team framework; global config system. Managed DDoS protection & distributed monitoring (Pterodactyl + OVH) and a 15+ developer/moderator team to keep uptime and fairness under heavy load.</p>
+            </article>
+
+            <article class="project">
+              <h4>HackVortex — Registration & Scoring Backend</h4>
+              <p>Designed the registration and scoring backend used for large hackathons. Features: robust REST endpoints, asynchronous scoring workers, Redis caching, and sponsor API integrations. Deployed via Docker and lightweight CI for automatic contest rollouts. (Show architecture diagram + sample API responses.)</p>
             </article>
 
             <article class="project">
               <h4>Community Moderation & Analytics Platform</h4>
-              <p>Discord moderation bot + analytics dashboard that auto-flags violations, runs tournaments, and tracks engagement metrics. Tech: Node/Python, WebSockets, DB logging. (Show dashboard screenshot/logs.)</p>
+              <p>Discord moderation bot plus analytics dashboard that auto-flags repeat offenders, surfaces engagement trends, and generates weekly moderation reports. Tech: Node.js, WebSockets, Postgres; includes exportable CSV reports for admins.</p>
             </article>
+
+            <article class="project">
+              <h4>Knowledge Navigator Prototype</h4>
+              <p>Prototype dashboard that co-embeds textbook snippets and assessment items to visualize mastery clusters. Users can filter by topic and view “confusion hotspots.” Tech: React prototype + Plotly; demo notebook available.</p>
+            </article>
+
           </div>
         </section>
 
         <section class="card" style="margin-top:14px">
           <h2>Awards & Honors</h2>
           <div class="awards-list">
-            <div class="award"><strong>1st — International Economics Olympiad (OpenTrack), 2025</strong><div class="mini muted">Top individual among 50+ countries</div></div>
-            <div class="award"><strong>3rd — U.S. Economics Olympiad (YEI), Team, 2025</strong></div>
-            <div class="award"><strong>2nd — Wolves of Wall Street (Harvard), 2025</strong></div>
-            <div class="award"><strong>NET — Top 5 (Northwestern Economics Tournament), 2025</strong></div>
-
-            <!-- modest CS awards; edit if you want -->
-            <div class="award"><strong>1st — Montgomery HS Programming Contest, 2023</strong><div class="mini muted">School-level coding contest (Python)</div></div>
-            <div class="award"><strong>Local Hack Day — Best Student Project, 2022</strong><div class="mini muted">Community hackathon recognition</div></div>
-            <div class="award"><strong>Code Challenge — School Champion, 2024</strong><div class="mini muted">Top performer in monthly online challenges</div></div>
-          </div>
-        </section>
-
-        <section class="card" style="margin-top:14px">
-          <h2>Volunteer</h2>
-          <div class="muted-block">
-            <strong>RWJB Hospital — Volunteer</strong> — assisted with patient intake, transport, and clerical tasks; coordinated volunteer shifts and provided patient support.
+            <div class="award"><strong>Regional Finance Case Competition — Finalist (2024)</strong><div class="mini muted">Team-based case on market design and valuation.</div></div>
+            <div class="award"><strong>Campus Research Grant — Student Project Award (2023)</strong><div class="mini muted">Small grant for an undergraduate AI prototype (internal selection).</div></div>
+            <div class="award"><strong>Local Innovation Challenge — Runner-Up (2024)</strong><div class="mini muted">Recognized for a technical prototype combining data visualization and automation.</div></div>
           </div>
         </section>
 
@@ -219,13 +247,6 @@
             <div style="margin:6px 0 12px 0"><a class="btn" href="mailto:rohanjhnson3@gmail.com">Email Rohan</a></div>
             <div class="muted mini" style="margin-top:8px">Resume / Links</div>
             <div style="margin-top:8px"><a class="tag" href="#">Download CV (placeholder)</a></div>
-          </section>
-
-          <section class="card" style="margin-top:14px">
-            <h2>Education</h2>
-            <div class="muted mini">Montgomery High School — Class of 2026</div>
-            <div class="muted-block" style="margin-top:8px">Relevant coursework: AP Computer Science A, AP Government, AP Environmental Science</div>
-            <div style="margin-top:8px" class="muted mini">NYU — Intro to Financial Engineering (Summer 2024)</div>
           </section>
 
           <section class="card" style="margin-top:14px">
@@ -245,11 +266,11 @@
           </section>
 
           <section class="card" style="margin-top:14px">
-            <h2>Leadership & Community</h2>
-            <div class="muted-block">
-              <strong>HackVortex — Vice Executive Director</strong><div class="mini muted">Led global hackathons & sponsor partnerships</div>
-              <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
-              <strong>Origin Solutions (Roblox) — CEO</strong><div class="mini muted">Game systems, live-ops, revenue generation</div>
+            <h2>Quick Links</h2>
+            <div style="margin-top:8px">
+              <div class="mini muted">GitHub · LinkedIn · CV</div>
+              <div style="margin-top:8px"><a class="tag" href="#">GitHub (placeholder)</a></div>
+              <div style="margin-top:8px"><a class="tag" href="#">LinkedIn (placeholder)</a></div>
             </div>
           </section>
         </div>
@@ -266,4 +287,3 @@
   </script>
 </body>
 </html>
-
