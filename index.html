@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rohan Johnson — Portfolio</title>
+  <meta name="description" content="Rohan Johnson — Student, Data Science & AI. Projects: Mantis demos, AI trading bot, Roblox systems, community moderation bots." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#7c3aed;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:#e6eef8;
+      background: linear-gradient(180deg, #071022 0%, #081426 60%), var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:32px 18px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+    }
+
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:22px;
+    }
+    .avatar{
+      width:84px;height:84px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#4f46e5);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;color:white;font-size:28px;flex:0 0 84px;
+      box-shadow: 0 6px 18px rgba(12,18,36,0.6);
+    }
+    .title {
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .title h1{margin:0;font-size:20px}
+    .title .sub{font-size:13px;color:var(--muted)}
+    .contact{
+      margin-left:auto;
+      text-align:right;
+      font-size:13px;color:var(--muted);
+    }
+    main{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:22px;
+      align-items:start;
+    }
+    /* main column */
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;
+      padding:20px;
+      box-shadow: 0 4px 20px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    h2{margin:0 0 12px 0;font-size:16px}
+    .muted{color:var(--muted);font-size:13px}
+    .about p{margin:0 0 8px 0;color:#d7e3f7}
+    .section-grid{display:grid;gap:12px}
+    .experience-item{display:block;margin-bottom:12px}
+    .experience-item .role{font-weight:700}
+    .experience-item .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{
+      background:var(--glass);
+      padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);
+      min-height:90px;display:flex;flex-direction:column;gap:8px;
+    }
+    .project h4{margin:0;font-size:14px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+    .awards-list{display:grid;gap:8px}
+    .award{background:var(--glass-2);padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);font-size:13px}
+    /* sidebar */
+    aside{position:relative}
+    .side-top{position:sticky;top:28px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px}
+    .contact-card .btn{
+      display:inline-block;padding:10px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#4f46e5);
+      color:white;text-decoration:none;font-weight:600;font-size:14px;
+    }
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    /* responsive */
+    @media (max-width:980px){
+      main{grid-template-columns:1fr; padding-bottom:40px}
+      aside{order:2}
+      .projects{grid-template-columns:1fr}
+    }
+    /* small helpers */
+    .pill{display:inline-block;background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .muted-block{color:var(--muted);font-size:13px}
+    .mini{font-size:12px;color:var(--muted)}
+    .tag{display:inline-block;background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:6px;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar" aria-hidden="true">RJ</div>
+      <div class="title">
+        <h1>Rohan Johnson</h1>
+        <div class="sub">Student · Data Science & AI · Class of 2026</div>
+        <div class="muted mini">Belle Mead, NJ · rohanjhnson3@gmail.com · (908) 211-1111</div>
+      </div>
+
+      <div class="contact">
+        <div class="muted mini">SAT 1550 (RW 750 / M 800)</div>
+        <div style="margin-top:8px"><span class="pill">AP Computer Science A</span> <span class="pill">AP Gov</span></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- left / content -->
+      <div>
+        <section class="card about">
+          <h2>About</h2>
+          <p>I build tools that turn messy data into clear, interactive insight. I’ve led large student communities and engineering teams, shipped data pipelines and ML experiments, and helped scale game & learning platforms to tens of thousands of users. My focus: embeddings, visualization, and practical AI systems that scale.</p>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Experience</h2>
+          <div class="section-grid">
+            <div class="experience-item">
+              <div class="role">Mantis AI — Data Science Research Intern <span class="mini muted">Sep 2025 — Present</span></div>
+              <div class="meta muted">Research pipelines · model eval · visualization · MIT collaboration</div>
+              <ul class="muted-block">
+                <li>Built reproducible analysis notebooks and model evaluation suites.</li>
+                <li>Produced visualizations used in research write-ups and demos.</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="role">Borex Capital — Venture Capital & Finance Intern <span class="mini muted">Jun 2024 — Sep 2024</span></div>
+              <div class="meta muted">Market research · deal screening</div>
+              <ul class="muted-block">
+                <li>Sourced & screened 40+ startups; built valuation helper scripts.</li>
+                <li>Coordinated founder calls and supported due diligence.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Selected Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h4>Embeddings Sandbox & Map (Mantis demo)</h4>
+              <p>Interactive notebook that co-embeds corpora and lets you re-weight dimensions to observe cluster drift. Tech: Python, HuggingFace, Plotly.</p>
+            </article>
+
+            <article class="project">
+              <h4>AI Trading Bot & Market Scraper</h4>
+              <p>Feature pipeline + backtesting scripts that feed a lightweight prediction model. Tech: Python, Pandas, REST APIs.</p>
+            </article>
+
+            <article class="project">
+              <h4>HackVortex Backend</h4>
+              <p>Flask + Postgres backend for registration & scoring; handled thousands of concurrent users and sponsor integrations.</p>
+            </article>
+
+            <article class="project">
+              <h4>Roblox — Origin Solutions (Game Systems)</h4>
+              <p>Lua systems for in-game economy & NPC pathfinding. Scaled to thousands of concurrent players; built analytics dashboards.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Awards & Honors</h2>
+          <div class="awards-list">
+            <div class="award"><strong>1st — International Economics Olympiad (OpenTrack), 2025</strong><div class="mini muted">Top individual among 50+ countries</div></div>
+            <div class="award"><strong>3rd — U.S. Economics Olympiad (YEI), Team, 2025</strong><div class="mini muted">National round team placement</div></div>
+            <div class="award"><strong>2nd — Wolves of Wall Street (Harvard), 2025</strong><div class="mini muted">Team finance simulation</div></div>
+            <div class="award"><strong>NET — Top 5 (Northwestern Economics Tournament), 2025</strong></div>
+
+            <!-- Placeholder/modest CS awards you can edit -->
+            <div class="award"><strong>1st — Montgomery HS Programming Contest, 2023</strong><div class="mini muted">School-level coding contest (Python)</div></div>
+            <div class="award"><strong>Local Hack Day — Best Student Project, 2022</strong><div class="mini muted">Community hackathon recognition</div></div>
+            <div class="award"><strong>Code Challenge — School Champion, 2024</strong><div class="mini muted">Top performer in monthly online challenges</div></div>
+            <!-- Replace the placeholders above with real awards or remove them -->
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Volunteer</h2>
+          <div class="muted-block">
+            <strong>RWJB Hospital — Volunteer</strong> (150+ hours) — assisted with patient intake, transport, and clerical tasks; coordinated volunteer shifts and provided patient support.
+          </div>
+        </section>
+
+      </div>
+
+      <!-- right / sidebar -->
+      <aside>
+        <div class="side-top">
+          <section class="card contact-card">
+            <h2>Contact</h2>
+            <div class="muted mini">Email</div>
+            <div style="margin:6px 0 12px 0"><a class="btn" href="mailto:rohanjhnson3@gmail.com">rohanjhnson3@gmail.com</a></div>
+            <div class="muted mini">Want the resume PDF?</div>
+            <div style="margin-top:8px"><a class="tag" href="#">Download CV (placeholder)</a></div>
+          </section>
+
+          <section class="card" style="margin-top:14px">
+            <h2>Education</h2>
+            <div class="muted mini">Montgomery High School — Class of 2026</div>
+            <div class="muted-block" style="margin-top:8px">GPA: Weighted 89 / Unweighted 87.6 · SAT: 1550 (RW 750 / M 800)</div>
+            <div style="margin-top:8px" class="muted mini">NYU — Intro to Financial Engineering (Summer 2024)</div>
+          </section>
+
+          <section class="card" style="margin-top:14px">
+            <h2>Skills</h2>
+            <div class="skills" style="margin-top:8px">
+              <span class="skill">Python</span>
+              <span class="skill">Pandas</span>
+              <span class="skill">scikit-learn</span>
+              <span class="skill">Flask</span>
+              <span class="skill">HuggingFace</span>
+              <span class="skill">Lua</span>
+              <span class="skill">SQL</span>
+              <span class="skill">Docker</span>
+              <span class="skill">Git</span>
+            </div>
+          </section>
+
+          <section class="card" style="margin-top:14px">
+            <h2>Leadership & Community</h2>
+            <div class="muted-block">
+              <strong>HackVortex — Vice Executive Director</strong><div class="mini muted">Led global hackathons & sponsor partnerships</div>
+              <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
+              <strong>Origin Solutions (Roblox) — CEO</strong><div class="mini muted">Game systems, live-ops, revenue generation</div>
+            </div>
+          </section>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Built by Rohan Johnson · <span class="muted">Edit this file and push to GitHub Pages to publish</span>
+    </footer>
+  </div>
+
+  <!-- Small script to add copy-paste link behaviors (optional) -->
+  <script>
+    // Placeholder for future enhancements (e.g., copy email button, analytics).
+    // No external JS required to publish; this keeps the page fast.
+  </script>
+</body>
+</html>
